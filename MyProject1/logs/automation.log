@@ -1,0 +1,7 @@
+2025-02-25 09:52:50 WARN  TestNGContentHandler:133 - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Stuti\Downloads\MyProject1\grouping.xml] otherwise TestNG may fail or not work as expected.
+2025-02-25 09:52:50 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\Stuti\Downloads\MyProject1\grouping.xml
+
+2025-02-25 09:52:54 INFO  TC_001_AccountRegistrationTest:15 - ******** Starting TC_001_AccountRegistrationTest  ***
+2025-02-25 09:52:54 ERROR TC_001_AccountRegistrationTest:57 - Test failed
+2025-02-25 09:52:58 INFO  TC_002_LoginTest:17 - **** Starting TC_002_LoginTest  ****
