@@ -1,0 +1,43 @@
+
+<suite name="Suite" thread-count="5" parallel="tests">
+<listeners>  
+<listener class-name="utilities.ExtentReportManager"/>>
+</listeners>
+<!--  Chrome Test  -->
+<test name="chrometest">
+<parameter name="os" value="Windows"/>
+<parameter name="browser" value="chrome"/>
+<classes>
+ <class name="testCases.TC_006addAssetTestCases"/>
+      <class name="testCases.TC_004AddVendorTestCases"/>
+      <class name="testCases.TC_005AddAssetTestCases"/>
+      <class name="testCases.TC_007IntentRequestTestCases"/>
+      <class name="testCases.TC_003MyPayrollLoginTest"/>
+</classes>
+</test>
+<!--  Edge Test  -->
+<test name="edgetest">
+<parameter name="os" value="Windows"/>
+<parameter name="browser" value="edge"/>
+<classes>
+ <class name="testCases.TC_006addAssetTestCases"/>
+      <class name="testCases.TC_004AddVendorTestCases"/>
+      <class name="testCases.TC_005AddAssetTestCases"/>
+      <class name="testCases.TC_007IntentRequestTestCases"/>
+      <class name="testCases.TC_003MyPayrollLoginTest"/>
+</classes>
+</test>
+<!--  Firefox Test  -->
+<test name="firefoxtest">
+<parameter name="os" value="Windows"/>
+<parameter name="browser" value="firefox"/>
+<classes>
+ <class name="testCases.TC_006addAssetTestCases"/>
+      <class name="testCases.TC_004AddVendorTestCases"/>
+      <class name="testCases.TC_005AddAssetTestCases"/>
+      <class name="testCases.TC_007IntentRequestTestCases"/>
+      <class name="testCases.TC_003MyPayrollLoginTest"/>
+
+</classes>
+</test>
+</suite>
