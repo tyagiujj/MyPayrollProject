@@ -97,8 +97,8 @@ public class BaseClass  {
     @Test(priority = 1, groups = {"Smoke", "Sanity", "Regression"})
     public void LoginPage() throws InterruptedException {
         MyPayrollLoginPage log = new MyPayrollLoginPage(driver);
-        log.enterUsername(p.getProperty("EmailAddress2"));
-        log.enterPassword(p.getProperty("Password2"));
+        log.enterUsername(p.getProperty("EmailAddress1"));
+        log.enterPassword(p.getProperty("Password1"));
         Thread.sleep(10000);
         log.clickLogin();
         System.out.println("Login Successful, Dashboard is displayed");
@@ -107,7 +107,7 @@ public class BaseClass  {
     public void verifyLogin() {
         System.out.println("Verifying login success...");
     }
-    //@AfterClass()
+    @AfterClass()
     public void tearDown() {
         if (driver != null) {
             driver.quit();

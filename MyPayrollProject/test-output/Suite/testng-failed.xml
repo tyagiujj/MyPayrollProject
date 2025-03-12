@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="os" value="Windows"/>
-  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="chrometest(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_009ApplyLeaveTestCases">
+      <class name="testCases.TC_011AddDesignationTestCases">
         <methods>
-          <include name="ApplyLeave"/>
+          <include name="tearDown"/>
+          <include name="verifyLogin"/>
+          <include name="AddDesignation"/>
+          <include name="NavigateToAddDesignationPage"/>
           <include name="setup"/>
+          <include name="LoginPage"/>
         </methods>
-      </class> <!-- testCases.TC_009ApplyLeaveTestCases -->
+      </class> <!-- testCases.TC_011AddDesignationTestCases -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- chrometest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

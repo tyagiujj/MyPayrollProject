@@ -40,7 +40,7 @@ public class ApplyLeaves {
     @FindBy(xpath = "//button[@id='applyleave']")
     WebElement ApplyLeave;
 
-    @FindBy(xpath = "//input[@id='LeaveTypeExisting']") // Number of days field
+    @FindBy(xpath = "//input[@id='LeaveTypeExisting']")
     WebElement NumberOfDays;
 
     private void scrollToElement(WebElement element) {
